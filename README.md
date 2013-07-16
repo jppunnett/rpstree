@@ -25,16 +25,6 @@ You can get help by running:
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-	gem 'rpstree'
-
-And then execute:
-
-	$ bundle
-
-Or install it yourself as:
-
 	$ gem install rpstree
 
 

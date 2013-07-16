@@ -20,16 +20,6 @@ If you know the process id you're looking for, you can use the following command
 
 == Installing
 
-Add this line to your application's Gemfile:
-
-    gem 'rpstree'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install rpstree
 
 == Contributing
