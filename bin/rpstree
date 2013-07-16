@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'methadone'
+require 'rpstree.rb'
+
+class App # :nodoc: all
+  include Methadone::Main
+  include Methadone::CLILogging
+
+  main do |procid|
+    Rpstree::ProcTreeViewer.new(procid).show_tree
+  end
+
+  arg :procid, :optional, :one, "The process Id. If not specified, displays tree of all processes."
+
+  version Rpstree::VERSION
+
+  use_log_level_option
+
+  #leak_exceptions(true)
+
+  go!
+end
